@@ -114,3 +114,5 @@
 - Так как требуется согласованный выпуск сборки шаблона (OsGForms.exe) и библиотеки OneScriptGameForms.dll прошу обратить особое внимание на совпадение их версий. Откройте свойства обоих файлов, перейдите на вкладку `Подробно` и сверьте их значения `Версия продукта`.
 
 ![Пример с кнопкой](https://github.com/ahyahy/OneScriptGameForms/blob/main/docs/Vers1.jpg)
+
+- На сейчас указанные файлы вы найдете в [каталоге docs](https://github.com/ahyahy/OneScriptGameForms/tree/main/docs)
