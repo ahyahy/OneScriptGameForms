@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>РежимФокусировки Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>РежимФокусировки (FocusMode) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает возможности захвата фокуса узлом.</p>
+        <p>
+			Это набор констант, определяющих, может ли элемент управления (кнопка, поле ввода, слайдер) получать фокус ввода от клавиатуры, геймпада или 
+			навигации джойстиком, и при каких условиях. Это ключевой механизм для создания интерфейсов, доступных для управления без мыши. Он позволяет 
+			разработчику решить, какие элементы должны реагировать на нажатие <b>Tab</b> или стрелки на геймпаде, а какие — оставаться пассивными до прямого клика мышью.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Все (All)</b></td>
+                        <td>Узел может захватывать фокус по щелчку мыши, используя стрелки и клавиши Tab на клавиатуре или кнопки D-pad на геймпаде.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Доступность (Accessibility)</b></td>
+                        <td>Узел может захватить фокус только когда активен экранный диктор.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Клик (Clik)</b></td>
+                        <td>Узел может захватывать фокус только по щелчкам мыши.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Отсутствие (None)</b></td>
+                        <td>Узел не может захватить фокус.</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

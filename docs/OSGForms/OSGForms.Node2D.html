@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Node2D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Узел2д (Node2D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Игровой 2D-объект, наследуемый всеми 2D-узлами. Имеет позицию, поворот, масштаб и наклон.</p>
+        <p>
+			Это базовый класс для всех объектов, существующих в двухмерном игровом пространстве. Он добавляет к обычному узлу понятие координат, 
+			вращения и масштаба в плоскости X-Y. Любой объект 2D-игры (персонаж, камера, источник света, частицы, тайловая карта) наследуется 
+			от <b>Узел2д (Node2D)</b>. Если вам нужно разместить объект в мире, перемещать его или вращать - вы используете этот класс или его наследников.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Трансформация в 2D</i></dt>
+				<dd><li><i>Позиция:</i>   Координаты узла относительно родителя.</li></dd>
+				<dd><li><i>Вращение:</i>   Угол поворота в градусах.</li></dd>
+				<dd><li><i>Масштаб:</i>   Коэффициент увеличения или уменьшения по осям X и Y. Отрицательный масштаб позволяет отражать объект (например, развернуть спрайт персонажа влево или вправо).</li></dd>
+				<dd><li>Все эти свойства объединяются в матрицу трансформации, которая автоматически применяется ко всем дочерним узлам.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Глобальные координаты</i></dt>
+				<dd><li>Позволяет легко переключаться между локальными координатами (относительно родителя) и глобальными (относительно начала мира) с помощью свойств <b>ГлобальнаяПозиция (GlobalPosition)</b> и методов <b>ВГлобальные (ToGlobal)</b>, <b>ВЛокальные (ToLocal)</b>. Это критически важно для взаимодействия объектов из разных веток дерева сцены.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Внутренние узлы</i></dt>
+				<dd><li>Поддерживает добавление внутренних дочерних узлов, которые не видны при обычном переборе детей и часто используются движком для служебных целей (например, узлы коллизий, привязанные к спрайту).</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Отрисовка (через наследников)</i></dt>
+				<dd><li>Сам по себе <b>Узел2д (Node2D)</b> невидим (это просто точка трансформации). Однако он является родителем для всех видимых 2D-классов: Спрайт2д, Полигон2д, Лайт2д, Частицы2д, ТайловаяКарта.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.CanvasItem.html">Холст (CanvasItem)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Узел2д (Node2D)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.AnimatedSprite2D.html">АнимированныйСпрайт2д (AnimatedSprite2D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Sprite2D.html">Спрайт2д (Sprite2D)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

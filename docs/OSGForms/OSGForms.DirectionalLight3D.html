@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>DirectionalLight3D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>НаправленныйСвет3д (DirectionalLight3D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Представляет направленный свет с расстояния, например, от Солнца.</p>
+        <p>
+			Это тип источника света, который испускает параллельные лучи света в одном направлении по всей сцене. В отличие от точечных или прожекторных 
+			источников, у этого света нет конкретной позиции в пространстве; важно только его направление (вращение).
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Бесконечная дальность</i></dt>
+				<dd><li>Лучи света параллельны друг другу и не затухают с расстоянием. Это означает, что объект, освещенный этим светом, будет иметь одинаковую яркость, независимо от того, насколько далеко он находится от источника.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Имитация солнца</i></dt>
+				<dd><li>В 3D-графике этот тип света практически всегда используется для имитации солнца или луны. Поскольку Солнце находится очень далеко от Земли, его лучи достигают поверхности практически параллельно.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Зависимость только от вращения</i></dt>
+				<dd><li>Перемещение узла <b>НаправленныйСвет3д (DirectionalLight3D)</b> по координатам (X, Y, Z) никак не влияет на освещение. Меняется только картинка теней (из-за смещения карты теней), но не направление лучей. Чтобы изменить угол падения света (например, сделать закат), нужно вращать узел.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Глобальные тени</i></dt>
+				<dd><li>Этот свет отвечает за отбрасывание теней от всех объектов в сцене в одном направлении, что критически важно для восприятия объема в открытых мирах.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node3D.html">Узел3д (Node3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.VisualInstance3D.html">ВизуальныйОбъект3д (VisualInstance3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Light3D.html">Свет3д (Light3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>НаправленныйСвет3д (DirectionalLight3D)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

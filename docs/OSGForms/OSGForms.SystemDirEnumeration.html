@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>СистемныйКаталог Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>СистемныйКаталог (SystemDir) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает перечислимые константы, используемые для получения путей к системным каталогам.</p>
+        <p>
+			Это набор констант, представляющих стандартные системные директории операционной системы (Windows, macOS, Linux, Android, iOS). 
+			Оно используется для безопасного и кроссплатформенного получения путей к важным местам хранения данных, таким как "Документы", 
+			"Загрузки", "Рабочий стол" или системные папки приложений. Использование этого перечисления вместо жестко прописанных путей 
+			(например, C:/Users/...) гарантирует, что игра или приложение будут корректно работать на любой ОС, учитывая её специфическую 
+			структуру файлов и языковые настройки.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Видео (Movies)</b></td>
+                        <td>Относится к пути к каталогу фильмов (или видео).</td>
+                        <td>4</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Документы (Documents)</b></td>
+                        <td>Относится к пути к каталогу документов.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Загрузки (Downloads)</b></td>
+                        <td>Относится к пути к каталогу загрузок.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Камера (DCIM)</b></td>
+                        <td>Относится к пути к каталогу DCIM (изображения с цифровой камеры).</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Музыка (Music)</b></td>
+                        <td>Относится к пути к каталогу с музыкальными файлами.</td>
+                        <td>5</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>РабочийСтол (Desktop)</b></td>
+                        <td>Логический рабочий стол, а не физическое местоположение файлов системы.</td>
+                        <td>0</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Рисунки (Pictures)</b></td>
+                        <td>Относится к пути к каталогу изображений.</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Node3D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Узел3д (Node3D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Базовый класс. Является базовым представлением узла в трехмерном пространстве. Все остальные трехмерные узлы наследуются от этого класса.</p>
+        <p>
+			Это базовый класс для всех объектов, существующих в трехмерном пространстве. Он добавляет к обычному узлу понятие координат (X, Y, Z), 
+			вращения (по трем осям) и масштаба в объемном мире. Любой объект 3D-игры (персонаж, камера, источник света, 3D-модель, зона триггера) 
+			наследуется от <b>Узел3д (Node3D)</b>
+
+        </p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Трансформация в 3D</i></dt>
+				<dd><li><i>Позиция (Вектор3):</i>   Координаты узла в трехмерном пространстве относительно родителя.</li></dd>
+				<dd><li><i>Вращение (Вектор3):</i>   Углы поворота по осям X, Y, Z (в градусах). Часто используется порядок вращения Euler XYZ.</li></dd>
+				<dd><li><i>Масштаб (Вектор3):</i>   Коэффициент увеличения или уменьшения по трем осям.</li></dd>
+				<dd><li>Все эти свойства объединяются в матрицу трансформации 4x4, которая автоматически применяется ко всем дочерним узлам.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Глобальные координаты и трансформация</i></dt>
+				<dd><li>Свойство <b>ГлобальнаяТрансформация (GlobalTransform)</b> позволяет получать и задавать полное положение, вращение и масштаб в мировом пространстве одним объектом.</li></dd>
+				<dd><li>Методы <b>ВГлобальные (ToGlobal)</b> и <b>ВЛокальные (ToLocal)</b> конвертируют точки между локальным пространством узла и мировым пространством.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Ориентация и Векторы</i></dt>
+				<dd><li>Метод <b>СмотретьИзПозиции (LookAtFromPosition)</b> автоматически поворачивает объект и поворачивает взгляд на указанную точку.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Отрисовка (через наследников)</i></dt>
+				<dd><li>Сам по себе Узел3д невидим (это просто точка привязки в пространстве). Он служит родителем для видимых и функциональных 3D-классов: Камера3д, Частицы3д и др.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Узел3д (Node3D)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.VisualInstance3D.html">ВизуальныйОбъект3д (VisualInstance3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Camera3D.html">Камера3д (Camera3D)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

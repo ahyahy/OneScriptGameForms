@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Vector2 Constructor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Вектор2 (Vector2)&nbsp;Конструктор</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Синтаксис</h4>
+        <p>Вектор2(&lt;Икс&gt;, &lt;Игрек&gt;)</p>
+        <h4 class=dtH4>Параметры</h4>
+        <dl>
+            <dt><i>Икс</i> (необязательный)</dt>
+            <dd>Тип: Число.</dd>
+            <dd>
+                Икс компонент вектора. Значение по умолчанию - <b>0</b>.
+            </dd>
+            <dt><i>Игрек</i> (необязательный)</dt>
+            <dd>Тип: Число.</dd>
+            <dd>
+                Игрек компонент вектора. Значение по умолчанию - <b>0</b>.
+            </dd>
+        </dl>
+        <h4 class=dtH4>Описание</h4>
+        <p>Создаёт новый экземпляр класса <b>Вектор2&nbsp;(Vector2)</b>.</p>
+        <h4 class=dtH4>Примечание</h4>
+        <p></p>
+        <h4 class=dtH4>Пример</h4>
+<pre class=code>
+Вектор2 = ИФ.Вектор2(110.7, 110.7);
+</pre>
+        <details>
+            <summary>Полный пример кода</summary>
+<pre class=code>
+<button type="button" class="copy-btn" data-target-id="cont1" style="font-size:100%;">Копировать</button>
+<hr style="border-color: lightgray;"><div id="cont1">
+Перем ИФ, Вектор2;
+
+Процедура ОдноразовыйТаймер() Экспорт
+	Сообщить("Строка(ТипЗнч(Вектор2)) = " + Строка(ТипЗнч(Вектор2)));
+	ИФ.СообщитьЕслиЛожь(Строка(ТипЗнч(Вектор2)) = "ИфВектор2", "Вектор2 (Vector2) Конструктор");
+	ИФ.Завершить();
+КонецПроцедуры
+
+ПодключитьВнешнююКомпоненту(ОбъединитьПути(ТекущийСценарий().Каталог, "OneScriptGameForms.dll"));
+ИФ = Новый ИгровыеФормы();
+ИФ.Запустить(ОбъединитьПути(ИФ.КаталогБиблиотеки, "OsGForms.exe"));
+
+Вектор2_1 = ИФ.Вектор2(, 110.7);
+Вектор2_2 = ИФ.Вектор2(110.7, );
+Вектор2_3 = ИФ.Вектор2();
+Вектор2 = ИФ.Вектор2(110.7, 110.7);
+Текст = 
+"Вектор2.Икс = " + Вектор2.Икс + "
+|Вектор2.Игрек = " + Вектор2.Игрек;
+ИФ.КорневоеОкно.ДобавитьДочерний(ИФ.Уведомление()).РазвернутьВЦентре(Текст, , , );
+
+ИФ.ОдноразовыйТаймер(ИФ.Действие(ЭтотОбъект, "ОдноразовыйТаймер"), 1000);
+
+Пока ИФ.Продолжать Цикл
+	Приостановить(1000);
+КонецЦикла;
+</div>
+</pre>
+        </details>
+        <p></p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

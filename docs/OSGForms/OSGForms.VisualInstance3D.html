@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>VisualInstance3D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ВизуальныйОбъект3д (VisualInstance3D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Базовый класс. Представляет родительский элемент всех визуальных 3D-узлов.</p>
+        <p>
+			Это абстрактный базовый класс для всех узлов сцены, которые имеют физическое представление в 3D-пространстве и могут быть отрисованы 
+			(видимы) или участвовать в формировании визуальной картины мира.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Базовый класс для видимых объектов</i></dt>
+				<dd><li>От него наследуются все конкретные 3D-объекты: меши, спрайты, источники света, частицы, декали и даже камеры (<b>Камера3д (Camera3D)</b>, так как она определяет видимость мира).</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Трансформация</i></dt>
+				<dd><li>Этот класс добавляет узлу свойства позиции, вращения и масштаба. Именно благодаря наследованию от <b>ВизуальныйОбъект3д (VisualInstance3D)</b> любой 3D-объект можно перемещать и вращать в пространстве.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Видимость и слои</i></dt>
+				<dd><li><i>Видимость:</i>   Включение/выключение видимости объекта.</li></dd>
+				<dd><li><i>Слои:</i>   Битовая маска видимости (камеры каких слоев видят этот объект).</li></dd>
+				<dd><li>Настройки участия объекта в генерации теней.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Абстрактность</i></dt>
+				<dd><li>Вы не можете создать экземпляр <b>ВизуальныйОбъект3д (VisualInstance3D)</b> напрямую и увидеть что-то на экране, так как у него нет собственной геометрии или текстуры. Он лишь задает правила существования объекта в 3D-мире. Чтобы что-то появилось, нужно использовать его наследников.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node3D.html">Узел3д (Node3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ВизуальныйОбъект3д (VisualInstance3D)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Light3D.html">Свет3д (Light3D)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

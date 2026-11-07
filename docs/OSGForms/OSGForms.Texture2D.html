@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Texture2D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Текстура2д (Texture2D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Базовый класс. Текстура для 2D и 3D. Текстура работает путем регистрации изображения в видеооборудовании, которое затем может использоваться в 3D-моделях или 2D объектах Sprite2D или элементах управления. Текстуры часто создаются путем загрузки их из файла. <b>Примечание:</b> Максимальный размер текстуры составляет 16384×16384 пикселей из-за ограничений графического оборудования. Большие текстуры могут не импортироваться.</p>
+        <p>
+			Это конкретный ресурс, представляющий собой стандартное двумерное изображение (растр), загруженное из файла. Это самый распространенный тип текстур 
+			в движке, используемый для спрайтов персонажей, фонов, иконок интерфейса, текстур материалов и любых других статичных картинок. 
+			В отличие от абстрактного класса <b>Текстура (Texture)</b>, этот класс содержит реальные данные изображения, оптимизированные для передачи в 
+			видеокарту (GPU) и быстрой отрисовки.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Загрузка из файлов</i></dt>
+				<dd><li>Автоматически импортирует изображения популярных форматов: PNG, JPG, WebP, BMP, TGA и другие.</li></dd>
+				<dd><li>При импорте движок может сжимать текстуру в специальные форматы видеокарты (например, BPTC, ETC2, S3TC) для экономии видеопамяти и ускорения рендеринга.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Настройки импорта</i></dt>
+				<dd><li>Позволяет управлять качеством, сжатием, наличием альфа-канала (прозрачности) и режимом фильтрации (пиксельная или плавная) прямо в настройках ресурса.</li></dd>
+				<dd><li>Поддерживает создание мип-мапов (уменьшенных копий текстуры) для корректного отображения объектов вдали.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Использование в UI и 2D/3D</i></dt>
+				<dd><li>Является основным типом данных для свойства <b>Текстура (Текстура)</b> у узлов Спрайт2д, Кнопка, Спрайт3д и др.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Программное создание</i></dt>
+				<dd><li>Может быть создана динамически из объекта <b>Изображение (Image)</b> во время выполнения игры, если нужно сгенерировать картинку кодом или изменить пиксели на лету.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.RefCounted.html">СчетчикСсылок (RefCounted)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Resource.html">Ресурс (Resource)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Texture.html">Текстура (Texture)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Текстура2д (Texture2D)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.ImageTexture.html">ТекстураИзИзображения (ImageTexture)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

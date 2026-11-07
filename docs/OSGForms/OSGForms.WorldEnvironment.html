@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>WorldEnvironment Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ОкружениеМира (WorldEnvironment) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Представляет свойства среды по умолчанию для всей сцены (эффекты постобработки, настройки освещения и фона).</p>
+        <p>
+			Это узел сцены, который управляет глобальными настройками окружающей среды и пост-обработки для всей 3D-сцены (или для той её части, где расположен этот узел).
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Настройки окружения</i></dt>
+				<dd><li><i>Фон:</i>   Определяет, что видно на заднем плане (сплошной цвет, градиент, панорамное небо или процедурное небо).</li></dd>
+				<dd><li><i>Освещение:</i>   Настраивает фоновый свет, который освещает тени, и энергию неба.</li></dd>
+				<dd><li><i>Туман:</i>   Добавляет атмосферную дымку, скрывающую дальние объекты или создающую настроение (линейный, экспоненциальный, высотный туман).</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Эффекты пост-обработки (Post-Processing)</i></dt>
+				<dd><li>Это фильтры, которые применяются к уже отрендеренному изображению перед выводом на экран. WorldEnvironment позволяет включить и настроить:</li></dd>
+				<dd><li><i>SSAO:</i>   Затенение в углах и стыках объектов для объема.</li></dd>
+				<dd><li><i>SSIL:</i>   Имитация отраженного света.</li></dd>
+				<dd><li><i>Glow:</i>   Эффект свечения для ярких участков изображения.</li></dd>
+				<dd><li><i>DOF:</i>   Размытие фона (эффект боке) в зависимости от расстояния до камеры.</li></dd>
+				<dd><li><i>Tonemapping:</i>   Коррекция цветов и яркости для реалистичного отображения (ACES, Reinhard и др.).</li></dd>
+				<dd><li><i>Vignette, Color Correction, Brightness/Contrast:</i>   Художественная цветокоррекция.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ОкружениеМира (WorldEnvironment)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

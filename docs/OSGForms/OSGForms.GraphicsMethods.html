@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Graphics Methods</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Графика (Graphics)&nbsp;Методы</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <p></p>
+        <h4 class=dtH4>Методы</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsToStringMethod.html">ВСтроку&nbsp;(ToString)</a> (унаследовано от ОбъектГодо (GObject))</td>
+                        <td width="50%">Возвращает строковое представление данного объекта.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsAddChildMethod.html">ДобавитьДочерний&nbsp;(AddChild)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Добавляет дочерний элемент.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsSendToBackMethod.html">НаЗаднийПлан&nbsp;(SendToBack)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Перемещает элемент в коллекции дочерних элементов родителя на задний план.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsBringToFrontMethod.html">НаПереднийПлан&nbsp;(BringToFront)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Перемещает элемент в коллекции дочерних элементов родителя на передний план.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsClearMethod.html">Очистить&nbsp;(Clear)</a></td>
+                        <td width="50%">Очищает всю поверхность холста от нарисованных элементов.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsGetChildrenMethod.html">ПолучитьДочерние&nbsp;(GetChildren)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Возвращает все дочерние элементы этого узла.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsGetWindowMethod.html">ПолучитьОкно&nbsp;(GetWindow)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Возвращает объект <b>Окно (Window)</b>, содержащее этот узел. Если узел находится в главном окне, это эквивалентно получению корневого узла.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsGetLocalMousePositionMethod.html">ПолучитьПозициюМыши&nbsp;(GetLocalMousePosition)</a> (унаследовано от Холст (CanvasItem))</td>
+                        <td width="50%">Возвращает положение мыши на этом холсте относительно позиции элемента, используя локальную систему координат этого холста.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsGetParentMethod.html">ПолучитьРодителя&nbsp;(GetParent)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Возвращает родительский элемент данного элемента или <b>Неопределено</b>, если у элемента нет родителя.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsGetNodeMethod.html">ПолучитьУзел&nbsp;(GetNode)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Возвращает дочерний узел по его имени.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawSetTransformMethod.html">Преобразовать&nbsp;(DrawSetTransform)</a></td>
+                        <td width="50%">Задаёт пользовательское локальное преобразование для отрисовки. Всё, что будет отрисовано <b>ПОСЛЕ ЭТОГО</b>, будет преобразовано этим преобразованием. Метод <b>СЛЕДУЕТ ПРИМЕНИТЬ ДО</b> рисования первого объекта.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawArcMethod.html">РисоватьДугу&nbsp;(DrawArc)</a></td>
+                        <td width="50%">Рисует незаполненную дугу между заданными углами с равномерными значениями цвета и ширины и опциональным сглаживанием (поддерживается только для положительных значений ширины).</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawCircleMethod.html">РисоватьКруг&nbsp;(DrawCircle)</a></td>
+                        <td width="50%">Рисует круг с позицией, заданной в локальном пространстве.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawLineMethod.html">РисоватьЛинию&nbsp;(DrawLine)</a></td>
+                        <td width="50%">Рисует линию от одной 2D точки к другой заданного цвета и ширины.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawMultilineStringMethod.html">РисоватьМногострочныйТекст&nbsp;(DrawMultilineString)</a></td>
+                        <td width="50%">Разбивает текст на строки и рисует их указанным шрифтом.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawMultilineStringOutlineMethod.html">РисоватьМногострочныйТекстКонтуром&nbsp;(DrawMultilineStringOutline)</a></td>
+                        <td width="50%">Разбивает текст на строки и рисует контур текста указанным шрифтом.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawPolygonMethod.html">РисоватьМногоугольник&nbsp;(DrawPolygon)</a></td>
+                        <td width="50%">Рисует сплошной многоугольник с любым количеством точек, выпуклый или вогнутый. В отличие от метода <b>РисоватьЦветнойМногоугольник (DrawColoredPolygon)</b>, цвет каждой точки можно изменять индивидуально.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawMultilineMethod.html">РисоватьМультилинию&nbsp;(DrawMultiline)</a></td>
+                        <td width="50%">Рисует несколько разрозненных линий с одинаковыми параметрами ширины и цвета. Каждая линия определяется двумя последовательными точками из массива, т.е. i-й сегмент состоит из points[2 * i], points[2 * i + 1] конечных точек.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawPolylineMethod.html">РисоватьПолилинию&nbsp;(DrawPolyline)</a></td>
+                        <td width="50%">Рисует соединённые отрезки линий с одинаковым цветом и шириной. При рисовании большого количества линий это быстрее, чем использование отдельных вызовов <b>РисоватьЛинию (DrawLine)</b>.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawRectMethod.html">РисоватьПрямоугольник&nbsp;(DrawRect)</a></td>
+                        <td width="50%">Рисует прямоугольник.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawDashedLineMethod.html">РисоватьПунктирнуюЛинию&nbsp;(DrawDashedLine)</a></td>
+                        <td width="50%">Рисует пунктирную линию от одной двухмерной точки к другой заданного цвета и ширины.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawCharMethod.html">РисоватьСимвол&nbsp;(DrawChar)</a></td>
+                        <td width="50%">Рисует первый символ строки, используя пользовательский шрифт.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawCharOutlineMethod.html">РисоватьСимволКонтуром&nbsp;(DrawCharOutline)</a></td>
+                        <td width="50%">Рисует контур первого символа строки, используя заданный шрифт.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawStringMethod.html">РисоватьСтроку&nbsp;(DrawString)</a></td>
+                        <td width="50%">Рисует текст с использованием указанного шрифта в указанной позиции.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawStringOutlineMethod.html">РисоватьСтрокуКонтуром&nbsp;(DrawStringOutline)</a></td>
+                        <td width="50%">Рисует контур text с заданным font в точке pos</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawTextureMethod.html">РисоватьТекстуру&nbsp;(DrawTexture)</a></td>
+                        <td width="50%">Рисует текстуру в заданной позиции.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawTextureRectMethod.html">РисоватьТекстуруПоПрямоугольнику&nbsp;(DrawTextureRect)</a></td>
+                        <td width="50%">Рисует текстурированный прямоугольник в заданной позиции, при необходимости модулированный цветом.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawColoredPolygonMethod.html">РисоватьЦветнойМногоугольник&nbsp;(DrawColoredPolygon)</a></td>
+                        <td width="50%">Рисует цветной многоугольник с любым количеством точек, выпуклый или вогнутый.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawMultilineColorsMethod.html">РисоватьЦветнуюМультилинию&nbsp;(DrawMultilineColors)</a></td>
+                        <td width="50%">Рисует несколько разрозненных линий с равномерной шириной и посегментной раскраской. Каждый сегмент определяется двумя последовательными точками и соответствующим цветом в параметре <b>СловарьЛинийЦветов</b>, т.е. i-й сегмент состоит из points[2 * i], points[2 * i + 1] конечных точек и имеет цвет colors[i].</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawPolylineColorsMethod.html">РисоватьЦветнуюПолилинию&nbsp;(DrawPolylineColors)</a></td>
+                        <td width="50%">Рисует соединённые отрезки линий с равномерной шириной, поточечной раскраской и опциональным сглаживанием (поддерживается только для положительных значений ширины). Цвета, назначенные точкам линии, соответствуют индексам между точками и цветами, т.е. каждый отрезок линии заполняется градиентом между цветами конечных точек.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawTextureRectRegionMethod.html">РисоватьЧастьТекстурыПоПрямоугольнику&nbsp;(DrawTextureRectRegion)</a></td>
+                        <td width="50%">Рисует текстурированный прямоугольник из области текстуры (указанной параметром <b>ПрямоугольникИсходный</b>) в заданной позиции в локальном пространстве, опционально модулированный цветом.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawEllipseMethod.html">РисоватьЭллипс&nbsp;(DrawEllipse)</a></td>
+                        <td width="50%">Рисует эллипс с большой полуосью и малой полуосью.</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsDrawEllipseArcMethod.html">РисоватьЭллиптическуюДугу&nbsp;(DrawEllipseArc)</a></td>
+                        <td width="50%">Рисует незаполненную эллиптическую дугу между заданными углами с равномерными значениями цвета и ширины и опциональным сглаживанием (поддерживается только для положительных значений ширины).</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td width="50%"><img src="pubmethod.gif"></img><a href="OSGForms.GraphicsRemoveChildMethod.html">УдалитьДочерний&nbsp;(RemoveChild)</a> (унаследовано от Узел (Node))</td>
+                        <td width="50%">Удаляет дочерний элемент из коллекции дочерних родителя. При этом сам элемент вместе со своими дочерними элементами из игровых форм <b>НЕ удаляется</b>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

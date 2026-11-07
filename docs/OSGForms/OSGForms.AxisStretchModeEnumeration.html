@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ОсевоеРастяжение Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ОсевоеРастяжение (AxisStretchMode) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает растяжение или расположение объекта по осям.</p>
+        <p>
+			Это набор констант, определяющих поведение текстуры (или её части) при изменении размера области отрисовки вдоль конкретной оси 
+			(горизонтальной или вертикальной). Оно указывает движку, как именно заполнять пространство: растягивать всё изображение, повторять его (тайлить), 
+			оставлять размер неизменным или использовать умное масштабирование с сохранением пропорций важных участков (9-patch).
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Вписать (Fit)</b></td>
+                        <td>Повторяет текстуру стиля панели для соответствия размеру стиля панели в соответствии с системой из девяти частей. В отличие от <b>Плитка (Tile)</b>, текстура может быть слегка растянута, чтобы сделать текстуру из девяти частей бесшовной.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Плитка (Tile)</b></td>
+                        <td>Повторяет текстуру стиля панели, чтобы она соответствовала размеру стиля панели в соответствии с системой девяти частей.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Растянуть (Stretch)</b></td>
+                        <td>Растянуть текстуру стиля панели. Это приведет к видимым искажениям, если только размер текстуры не будет идеально соответствовать размеру стиля панели.</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

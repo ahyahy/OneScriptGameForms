@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Button Constructor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Кнопка (Button)&nbsp;Конструктор</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Синтаксис</h4>
+        <p>Кнопка()</p>
+        <h4 class=dtH4>Параметры</h4>
+        <dl></dl>
+        <h4 class=dtH4>Описание</h4>
+        <p>Создаёт новый экземпляр класса <b>Кнопка&nbsp;(Button)</b>.</p>
+        <h4 class=dtH4>Примечание</h4>
+        <p></p>
+        <h4 class=dtH4>Пример</h4>
+<pre class=code>
+Кнопка1 = ИФ.Кнопка();
+</pre>
+        <details>
+            <summary>Полный пример кода</summary>
+<pre class=code>
+<button type="button" class="copy-btn" data-target-id="cont1" style="font-size:100%;">Копировать</button>
+<hr style="border-color: lightgray;"><div id="cont1">
+Перем ИФ, Кнопка1, Действие;
+
+Процедура Кнопка1_Нажатие() Экспорт
+	Сообщить("Строка(ТипЗнч(Кнопка1)) = " + Строка(ТипЗнч(Кнопка1)));
+	ИФ.СообщитьЕслиЛожь(Строка(ТипЗнч(Кнопка1)) = "ИфКнопка", "Кнопка (Button) Конструктор");
+	ИФ.Завершить();
+КонецПроцедуры
+
+Процедура ОдноразовыйТаймер() Экспорт
+	Кнопка1.ПрограммноНажать();
+КонецПроцедуры
+
+ПодключитьВнешнююКомпоненту(ОбъединитьПути(ТекущийСценарий().Каталог, "OneScriptGameForms.dll"));
+ИФ = Новый ИгровыеФормы();
+ИФ.Запустить(ОбъединитьПути(ИФ.КаталогБиблиотеки, "OsGForms.exe"));
+
+Кнопка1 = ИФ.Кнопка();
+ИФ.КорневоеОкно.ДобавитьДочерний(Кнопка1);
+Кнопка1.Текст = "Нажми меня";
+Кнопка1.Позиция = ИФ.Вектор2(10, 10);
+Действие = ИФ.Действие(ЭтотОбъект, "Кнопка1_Нажатие");
+Кнопка1.Нажатие = Действие;
+
+ИФ.ОдноразовыйТаймер(ИФ.Действие(ЭтотОбъект, "ОдноразовыйТаймер"), 1000);
+
+Пока ИФ.Продолжать Цикл
+	Приостановить(1000);
+КонецЦикла;
+</div>
+</pre>
+        </details>
+        <p></p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

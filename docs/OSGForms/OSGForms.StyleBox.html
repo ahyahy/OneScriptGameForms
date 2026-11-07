@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>StyleBox Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>СтильПанели (StyleBox) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Базовый класс для рисования стилизованных рамок для элементов пользовательского интерфейса.</p>
+        <p>
+			Это абстрактный ресурс, определяющий способ отрисовки фона для элементов интерфейса (Контрол). Он отвечает за всё, что находится под 
+			содержимым кнопки, панели, окна или списка: цвет, текстуру, рамку, скругление углов, тени и внутренние отступы. 
+			Сам по себе стиль панели не используется напрямую, так как это лишь шаблон. Для реальной работы используются его конкретные 
+			наследники, каждый из которых рисует фон своим способом.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Универсальность оформления</i></dt>
+				<dd><li>Позволяет отделить визуальный стиль от логики элемента. Одна и та же кнопка может выглядеть как пластиковая панель, как лист бумаги или как невидимая зона, просто путем замены ресурса <b>СтильПанели (StyleBox)</b>.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>9-частное масштабирование</i></dt>
+				<dd><li>Большинство стилей поддерживают режим, при котором углы изображения не растягиваются, а центральная часть тянется. Это позволяет создавать рамки любого размера без искажения углов и границ.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Внутренние отступы</i></dt>
+				<dd><li>Каждому стилю можно задать отступы (ContentMargin*) слева, сверху, справа и снизу. Это гарантирует, что текст или иконка внутри кнопки не прилипнут к краю рамки, независимо от размера кнопки.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Состояния элемента</i></dt>
+				<dd><li>В темах для одного типа элементов (например, Кнопка) можно задать разные стили панелеи для разных состояний: обычное, наведение, нажатое, отключенное, в фокусе.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.RefCounted.html">СчетчикСсылок (RefCounted)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Resource.html">Ресурс (Resource)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>СтильПанели (StyleBox)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.StyleBoxLine.html">СтильПанелиЛиния (StyleBoxLine)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.StyleBoxFlat.html">СтильПанелиПлоский (StyleBoxFlat)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.StyleBoxEmpty.html">СтильПанелиПусто (StyleBoxEmpty)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.StyleBoxTexture.html">СтильПанелиТекстура (StyleBoxTexture)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>МаскаКнопокМыши Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>МаскаКнопокМыши (MouseButtonMask) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает сочетание кнопок мыши как комбинированное значение при нажатии.</p>
+        <p>
+			Это набор битовых флагов, представляющих состояние кнопок мыши в конкретный момент времени. В отличие от перечисления <b>КнопкаМыши (MouseButton)</b>, 
+			которое идентифицирует конкретное событие нажатия или отпускания, маска используется для проверки того, <b>какие кнопки зажаты прямо сейчас</b>.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Дополнительная1 (Mb_xbutton1)</b></td>
+                        <td>Маска дополнительной кнопки мыши 1.</td>
+                        <td>128</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Дополнительная2 (Mb_xbutton2)</b></td>
+                        <td>Маска дополнительной кнопки мыши 2.</td>
+                        <td>256</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Левая (Left)</b></td>
+                        <td>Маска основной кнопки мыши, обычно для левой кнопки.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Правая (Right)</b></td>
+                        <td>Маска дополнительной кнопки мыши, обычно для правой кнопки.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Средняя (Middle)</b></td>
+                        <td>Маска средней кнопки мыши.</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

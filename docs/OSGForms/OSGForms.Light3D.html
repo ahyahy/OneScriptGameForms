@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Light3D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Свет3д (Light3D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Базовый класс для различных видов световых узлов.</p>
+        <p>
+			Это абстрактный базовый класс для всех типов источников света в трехмерном пространстве. Он не используется напрямую для создания видимого 
+			света в сцене, а служит фундаментом, определяющим общие свойства и поведение, которые наследуются конкретными типами ламп.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Универсальные настройки</i></dt>
+				<dd><li>Класс предоставляет единый интерфейс для управления параметрами, важными для любого источника света:</li></dd>
+				<dd><li><i>Цвет и яркость:</i>   Свойства <b>ЦветСвета (LightColor)</b> и <b>СилаСвета (LightEnergy)</b>.</li></dd>
+				<dd><li><i>Тени:</i>   Включение/выключение теней, настройка их разрешения и смещения.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Абстрактная природа</i></dt>
+				<dd><li>Вы не можете добавить узел типа <b>Свет3д (Light3D)</b> в сцену и ожидать от него света. Необходимо использовать один из его конкретных наследников.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node3D.html">Узел3д (Node3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.VisualInstance3D.html">ВизуальныйОбъект3д (VisualInstance3D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Свет3д (Light3D)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.DirectionalLight3D.html">НаправленныйСвет3д (DirectionalLight3D)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

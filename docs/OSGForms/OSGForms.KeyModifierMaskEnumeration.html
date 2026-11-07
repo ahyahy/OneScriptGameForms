@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Модификаторы Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Модификаторы (KeyModifierMask) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает коды клавиш модификаторов.</p>
+        <p>
+			Это набор битовых флагов, представляющих состояние клавиш-модификаторов (Shift, Ctrl, Alt, Meta/Cmd) в момент события ввода. 
+			В отличие от обычных клавиш, модификаторы редко используются сами по себе; их главная задача - изменять действие других клавиш 
+			(например, Ctrl+C для копирования или Shift+Стрелка для выделения текста). Это перечисление позволяет компактно хранить и проверять состояние 
+			всех модификаторов одновременно в одном целом числе, что критически важно для реализации горячих клавиш (шорткатов) и кроссплатформенного управления.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Alt (Alt)</b></td>
+                        <td>Маска клавиш Alr или Option (на macOS).</td>
+                        <td>67108864</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Code (Code)</b></td>
+                        <td>Битовая маска со всеми включенными битами, кроме клавиш-модификаторов. Примените её для удаления модификаторов. Применив её вы получите код клавиши.</td>
+                        <td>8388607</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Ctrl (Ctrl)</b></td>
+                        <td>Маска управляющей клавиши.</td>
+                        <td>268435456</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>GroupSwitch (GroupSwitch)</b></td>
+                        <td>Маска клавиш группового переключателя.</td>
+                        <td>1073741824</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Kpad (Kpad)</b></td>
+                        <td>Маска клавиш цифровой клавиатуры.</td>
+                        <td>536870912</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Modifier (Modifier)</b></td>
+                        <td>Битовая маска со всеми включенными битами модификаторов. Примените её для изоляции модификаторов. Применив её вы получите код модификаторов.</td>
+                        <td>2130706432</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>None (None)</b></td>
+                        <td>Значение перечисления, которые не соответствует ни одному ключу.</td>
+                        <td>0</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Shift (Shift)</b></td>
+                        <td>Маска клавиши Shift.</td>
+                        <td>33554432</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Meta (Meta)</b></td>
+                        <td>Маска клавиш Command (на macOS) или Meta (на Windows).</td>
+                        <td>134217728</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

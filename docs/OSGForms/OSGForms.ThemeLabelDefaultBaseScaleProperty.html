@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>DefaultBaseScale Property</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ТемаНадпись.МасштабПоУмолчанию&nbsp;(ThemeLabel.DefaultBaseScale)&nbsp;Свойство</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Использование</h4>
+        <p>Чтение и запись.</p>
+        <h4 class=dtH4>Значение</h4>
+        <p>Тип: Число.</p>
+        <p>Возвращает или задает базовый масштабный коэффициент по умолчанию для этого ресурса темы. Используется некоторыми элементами управления для масштабирования их визуальных свойств на основе глобального масштабного коэффициента. Если это значение установлено на <b>0.0</b>, используется глобальный масштабный коэффициент. Значение по умолчанию - <b>0.0</b>.</p>
+        <h4 class=dtH4>Примечание</h4>
+        <p>
+			У свойства <b>МасштабПоУмолчанию (DefaultBaseScale)</b> есть известная особенность: движок применяет его не везде, где вы этого ждёте. 
+			В дефолтной теме движка на масштаб умножаются десятки элементов — шрифты, иконки, отступы, радиусы углов. 
+			А вот в кастомной теме <b>МасштабПоУмолчанию (DefaultBaseScale)</b> автоматически масштабирует сравнительно мало: например, толщину курсора в <b>LineEdit</b> - да, 
+			но размеры шрифтов, отступы и радиусы ваших стилей панели - нет. Поэтому <b>МасштабПоУмолчанию (DefaultBaseScale)</b> в кастомных темах - это скорее 
+			справочное значение, из которого вы сами умножаете свои величины в коде, а не автомасштабатор всей темы. Это зафиксировано как известная проблема в Годо.		
+		</p>
+        <h4 class=dtH4>Пример</h4>
+<pre class=code>
+
+</pre>
+        <details>
+            <summary>Полный пример кода</summary>
+<pre class=code>
+<button type="button" class="copy-btn" data-target-id="cont1" style="font-size:100%;">Копировать</button>
+<hr style="border-color: lightgray;"><div id="cont1">
+
+</div>
+</pre>
+        </details>
+        <p></p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

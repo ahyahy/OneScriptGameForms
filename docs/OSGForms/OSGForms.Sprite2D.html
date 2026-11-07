@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Sprite2D Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Спрайт2д (Sprite2D) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Универсальный узел спрайта, отображающий 2D-текстуру.</p>
+        <p>
+			Это базовый узел для отображения двухмерных изображений (Текстура2д) в игровом мире. Это кирпичик визуальной части любой 2D-игры: персонажи, 
+			враги, предметы, частицы, элементы окружения и декорации. В отличие от элементов интерфейса (Контрол), Спрайт2д существует в координатах 
+			игрового мира, зависит от камеры (Камера2д) и может вращаться, масштабироваться и перемещаться в пространстве уровня.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Отображение текстуры</i></dt>
+				<dd><li>Принимает ресурс <b>ТекстураИзИзображения (ImageTexture)</b> и отрисовывает его в точке расположения узла.</li></dd>
+				<dd><li>Поддерживает автоматическое определение центра изображения или ручную настройку точки привязки, вокруг которой происходит вращение и масштабирование.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Анимация и Фреймы</i></dt>
+				<dd><li>Позволяет отображать конкретный кадр из спрайт-листа (большого изображения, содержащего множество кадров анимации) через свойства <b>ОбластьВырезки (RegionRect)</b>.</li></dd>
+				<dd><li>Часто используется в паре с узлом <b>АнимированныйСпрайт2д (AnimatedSprite2D)</b>, но сам по себе может показывать статичные картинки или переключать их кодом.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Регион</i></dt>
+				<dd><li>Можно вырезать только прямоугольную часть текстуры, игнорируя остальное. Это критически важно для оптимизации (когда много объектов упаковано в один атлас) и для покадровой анимации вручную.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Центрирование и Оффсет</i></dt>
+				<dd><li>Свойство <b>ПоЦентру (Centered)</b> определяет, находится ли точка координат узла (0,0) в центре спрайта или в его левом верхнем углу.</li></dd>
+				<dd><li>Свойство <b>Смещение (Offset)</b> позволяет дополнительно сдвинуть изображение относительно этой точки.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.CanvasItem.html">Холст (CanvasItem)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node2D.html">Узел2д (Node2D)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Спрайт2д (Sprite2D)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

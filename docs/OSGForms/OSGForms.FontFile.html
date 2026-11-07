@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>FontFile Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ШрифтИзФайла (FontFile) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Содержит набор глифов для представления символов Unicode, импортированных из файла шрифта.</p>
+        <p>
+			Это конкретный ресурс, представляющий собой шрифт, загруженный из файла формата .ttf (TrueType), .otf (OpenType) или .ttc (Collection). 
+			В отличие от абстрактного <b>Шрифт (Font)</b> или растровых шрифтов, этот класс хранит векторные данные глифов, что позволяет отображать текст 
+			в любом размере без потери качества (пикселизации). Это самый распространенный тип шрифта в современных проектах, используемый для основного 
+			интерфейса, диалогов и меню, где важна четкость текста на экранах с любым разрешением.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Масштабируемость без потерь</i></dt>
+				<dd><li>Поскольку шрифт векторный, вы можете изменять размер (в огромном диапазоне (от 8 до 500+ пикселей), и текст всегда останется четким и гладким. Движок растеризует глифы на лету под нужный размер.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Поддержка вариативных осей (Variable Fonts)</i></dt>
+				<dd><li>Если файл шрифта является вариативным (Variable Font), класс позволяет программно менять его характеристики через оси:</li></dd>
+				<dd><li><i>Вес (Weight):</i>   От тонкого (100) до жирного (900).</li></dd>
+				<dd><li><i>Ширина (Width):</i>   От узкого до широкого.</li></dd>
+				<dd><li>Это позволяет иметь один файл шрифта вместо десятков отдельных файлов для каждого начертания.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Настройка сглаживания</i></dt>
+				<dd><li>Позволяет управлять режимом сглаживания (антиалиасинга): Нет, Оттенки серого, LCD.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.RefCounted.html">СчетчикСсылок (RefCounted)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Resource.html">Ресурс (Resource)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Font.html">Шрифт (Font)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ШрифтИзФайла (FontFile)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

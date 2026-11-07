@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>StyleBoxLine Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>СтильПанелиЛиния (StyleBoxLine) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Представляет класс, который отображает одну линию заданного цвета и толщины. Линия может быть как горизонтальной, так и вертикальной. Полезно для разделителей.</p>
+        <p>
+			Это специализированный ресурс оформления, который отрисовывает простую прямую линию (горизонтальную или вертикальную). В отличие от других стилей, 
+			он не создает замкнутую область или рамку, а служит исключительно визуальным разделителем. Этот класс идеально подходит для создания разделительных 
+			черт в меню, отступов между секциями настроек, подчеркиваний заголовков или границ в списках, не требуя использования текстур-картинок.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Ориентация линии</i></dt>
+				<dd><li>Автоматически определяет направление линии (горизонтальное или вертикальное) в зависимости от того, как растянут элемент, к которому она применена, или от явной настройки (в некоторых версиях движка).</li></dd>
+				<dd><li>Если элемент шире, чем высота - линия будет горизонтальной. Если выше, чем ширина — вертикальной.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Настройка толщины и цвета</i></dt>
+				<dd><li>Позволяет задать толщину линии в пикселях и её цвет.</li></dd>
+				<dd><li>Поддерживает полупрозрачность через альфа-канал цвета.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Автоматические отступы</i></dt>
+				<dd><li>В отличие от плоских стилей, СтильПанелиЛиния автоматически создает отступ с одной стороны от линии, равный её толщине. Это гарантирует, что линия не перекроет соседний контент и будет корректно вписана в поток интерфейса.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Легковесность</i></dt>
+				<dd><li>Не требует внешних изображений (текстур), рисуется программно. Занимает минимум памяти и быстро рендерится.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.RefCounted.html">СчетчикСсылок (RefCounted)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Resource.html">Ресурс (Resource)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.StyleBox.html">СтильПанели (StyleBox)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>СтильПанелиЛиния (StyleBoxLine)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>FontVariation Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ШрифтВариативный (FontVariation) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Предоставляет вариации OpenType, имитацию жирного/наклонного начертания и дополнительные настройки шрифта.</p>
+        <p>
+			Это ресурс-обертка, который позволяет тонко настраивать параметры шрифта (жирность, ширину, наклон) без необходимости загружать отдельные 
+			файлы для каждого начертания. Он ссылается на базовый шрифт и применяет к нему дополнительные настройки осей вариации или фиксированные стили. 
+			Этот класс является ключевым инструментом для работы с современными вариативными шрифтами (Variable Fonts), где один файл .ttf или .otf содержит 
+			бесконечное множество начертаний, но также полезен для принудительного изменения свойств обычных шрифтов (например, сделать шрифт искусственно жирнее или уже).
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Настройка осей вариации (Variable Axes)</i></dt>
+				<dd><li>Позволяет программно задавать числовые значения для осей, поддерживаемых шрифтом:</li></dd>
+				<dd><li><i>Вес (Weight):</i>   Плавная регулировка от тонкого (100) до сверхжирного (900).</li></dd>
+				<dd><li><i>Ширина (Width):</i>   Изменение пропорций от узких до широких.</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.RefCounted.html">СчетчикСсылок (RefCounted)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Resource.html">Ресурс (Resource)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Font.html">Шрифт (Font)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ШрифтВариативный (FontVariation)</b>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>РежимОтрисовки Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>РежимОтрисовки (DrawMode) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает визуальное состояние, используемое для отрисовки кнопки.</p>
+        <p>
+			Это набор констант, определяющих текущее визуальное состояние элемента управления (чаще всего Кнопка, Переключатель). 
+			Оно используется движком и разработчиками для выбора правильного стиля (StyleBox), цвета или текстуры в зависимости от того, 
+			взаимодействует ли пользователь с элементом в данный момент. Это перечисление является основой системы темизации в Godot: 
+			для каждого режима отрисовки можно задать уникальный внешний вид, создавая отзывчивый и живой интерфейс.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Наведено (Hover)</b></td>
+                        <td>Наведенное состояние.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>НаведеноНажато (HoverPressed)</b></td>
+                        <td>Наведенное и нажатое состояние.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Нажато (Pressed)</b></td>
+                        <td>Нажатое состояние.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Отключено (Disabled)</b></td>
+                        <td>Отключенное состояние.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Стандартный (Normal)</b></td>
+                        <td>Нормальное состояние (т. е. не нажато, не наведено, не переключено и не включено).</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

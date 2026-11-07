@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ФлагПереносаСтроки Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ФлагПереносаСтроки (LineBreakFlag) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает способ разделения текста для переноса.</p>
+        <p>
+			Это набор битовых флагов, определяющих правила автоматического переноса текста внутри узлов интерфейса (Надпись, Кнопка, ПравкаТекста) или при ручной отрисовке. 
+			Эти флаги указывают движку, как разбивать длинные строки на несколько линий, если они не помещаются в отведенную ширину, и как обрабатывать специальные символы.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Адаптивный (Adaptive)</b></td>
+                        <td>Следует использовать только в сочетании с <b>ГраницаСлов (WordBound)</b>, разрывать линию между любыми не связанными между собой графемами, если разрыв между словами невозможен.</td>
+                        <td>8</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ГраницаСлов (WordBound)</b></td>
+                        <td>Разделение по границе между словами.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Графемы (GraphemeBound)</b></td>
+                        <td>Разделение между любыми не связанными между собой графемами.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ОбрезатьОтступ (TrimIndent)</b></td>
+                        <td>Вычитание ширины отступа первой строки из ширины всех строк после первой.</td>
+                        <td>32</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ОбрезатьСконца (TrimEndEdgeSpaces)</b></td>
+                        <td>Удаляет пробелы и символы переноса строки из конца разорванных сегментов строки.</td>
+                        <td>128</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ОбрезатьСначала (TrimStartEdgeSpaces)</b></td>
+                        <td>Удаляет пробелы и символы переноса строки из начала сегментов разорванной строки.</td>
+                        <td>64</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Обязательно (Mandatory)</b></td>
+                        <td>Разрыв строки выполняется в местах, где присутствуют обязательные символы разрыва строки.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>Отсутствие (None)</b></td>
+                        <td>Без разделения.</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

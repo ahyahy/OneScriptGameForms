@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>DisplayServiceMessages Property</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ИгровыеФормы.ВыводитьСлужебныеСообщения&nbsp;(GameForms.DisplayServiceMessages)&nbsp;Свойство</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Использование</h4>
+        <p>Чтение и запись.</p>
+        <h4 class=dtH4>Значение</h4>
+        <p>Тип: Булево.</p>
+        <p>Возвращает или задает флаг вывода служебных сообщений от библиотеки и от движка Godot в окно консоли. Значение по умолчанию - <b>Ложь</b>.</p>
+        <h4 class=dtH4>Примечание</h4>
+        <p>Это не относится к сообщения об ошибках.</p>
+        <h4 class=dtH4>Пример</h4>
+<pre class=code>
+ИФ.ВыводитьСлужебныеСообщения = Истина;
+Сообщить("ИФ.ВыводитьСлужебныеСообщения = " + ИФ.ВыводитьСлужебныеСообщения);
+</pre>
+        <details>
+            <summary>Полный пример кода</summary>
+<pre class=code>
+<button type="button" class="copy-btn" data-target-id="cont1" style="font-size:100%;">Копировать</button>
+<hr style="border-color: lightgray;"><div id="cont1">
+Перем ИФ;
+
+Процедура ОдноразовыйТаймер() Экспорт
+	Сообщить("ИФ.ВыводитьСлужебныеСообщения = " + ИФ.ВыводитьСлужебныеСообщения);
+	ИФ.СообщитьЕслиЛожь(ИФ.ВыводитьСлужебныеСообщения = Истина, "ИгровыеФормы.ВыводитьСлужебныеСообщения (GameForms.DisplayServiceMessages) Свойство");
+	ИФ.Завершить();
+КонецПроцедуры
+
+ПодключитьВнешнююКомпоненту(ОбъединитьПути(ТекущийСценарий().Каталог, "OneScriptGameForms.dll"));
+ИФ = Новый ИгровыеФормы();
+ИФ.Запустить(ОбъединитьПути(ИФ.КаталогБиблиотеки, "OsGForms.exe"));
+ИФ.ВыводитьСлужебныеСообщения = Истина;
+
+Текст = "ИФ.ГодоЗапущен = " + ИФ.ГодоЗапущен;
+ИФ.КорневоеОкно.ДобавитьДочерний(ИФ.Уведомление()).РазвернутьВЦентре(Текст, , , );
+
+ИФ.ОдноразовыйТаймер(ИФ.Действие(ЭтотОбъект, "ОдноразовыйТаймер"), 1000);
+
+Пока ИФ.Продолжать Цикл
+	Приостановить(1000);
+КонецЦикла;
+</div>
+</pre>
+        </details>
+        <p></p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

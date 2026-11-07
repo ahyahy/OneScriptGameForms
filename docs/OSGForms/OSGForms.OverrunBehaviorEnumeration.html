@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ПоведениеПриПереполнении Перечисление</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>ПоведениеПриПереполнении (OverrunBehavior) Перечисление</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Указывает поведение обрезки, когда текст выходит за пределы ограничивающего прямоугольника узла.</p>
+        <p>
+			Это набор констант, определяющих стратегию обработки текста, который не помещается в отведенную область видимости узла (например, в Надпись или Кнопка). 
+			Оно указывает движку, что делать с "лишними" символами, когда длина строки превышает ширину контейнера, а перенос строк отключен или невозможен.
+		</p>
+        <h4 class=dtH4>Члены</h4>
+        <div class=tablediv>
+            <table class=dtTABLE cellSpacing=0>
+                <tbody>					
+                    <tr vAlign=top>
+                        <th width="38%">Имя члена</th>
+                        <th width="50%">Описание</th>
+                        <th width="12%">Значение</th>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>БезОбрезки (NoTrimming)</b></td>
+                        <td>Обрезка текста не производится.</td>
+                        <td>0</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСимволам (TrimChar)</b></td>
+                        <td>Обрезает текст по символам.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСимволамМноготочие (TrimEllipsis)</b></td>
+                        <td>Обрезает текст по символам и добавляет многоточие, чтобы указать, что части скрыты, если обрезанный текст содержит 6 символов или длиннее.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСимволамМноготочиеСтрого (TrimEllipsisForce)</b></td>
+                        <td>Обрезает текст по символам и добавляет многоточие, чтобы указать, что части скрыты независимо от длины обрезанного текста.</td>
+                        <td>5</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСловам (TrimWord)</b></td>
+                        <td>Обрезает текст по словам.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСловамМноготочие (TrimWordEllipsis)</b></td>
+                        <td>Обрезает текст по словам и добавляет многоточие, чтобы указать, что части скрыты, если обрезанный текст содержит 6 символов или длиннее.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr vAlign=top>
+                        <td><b>ПоСловамМноготочиеСтрого (TrimWordEllipsisForce)</b></td>
+                        <td>Обрезает текст по словам и добавляет многоточие, чтобы указать, что части скрыты независимо от длины обрезанного текста.</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>

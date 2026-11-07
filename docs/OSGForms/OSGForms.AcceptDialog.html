@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>AcceptDialog Class</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script defer src="mobilstyle.js"></script>
+</head>
+<body id=bodyID class=dtBODY>
+    <div id=nsbanner>
+        <div id=bannerrow1>
+            <table class=bannerparthead cellSpacing=0>
+                <tbody>
+                    <tr id=hdr>
+                        <td class=runninghead></td>
+                        <td class=product></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id=TitleRow>
+            <h1 class=dtH1>Уведомление (AcceptDialog) Класс</h1>
+        </div>
+    </div>
+    <div id=nstext>
+        <h4 class=dtH4>Описание</h4>
+        <p>Представляет диалог с указанным заголовком и текстом, используемый для уведомления пользователя.</p>
+        <p>
+			Это специализированное модальное окно, предназначенное для отображения важного сообщения и получения от пользователя простого подтверждения 
+			(обычно <b>ОК</b> или <b>Закрыть</b>). В отличие от обычного окна, это диалоговое окно автоматически блокирует взаимодействие с остальной 
+			игрой или приложением, пока пользователь не нажмет кнопку подтверждения. Оно идеально подходит для сообщений об ошибках, предупреждений, 
+			уведомлений о сохранении или простых вопросов, не требующих сложного выбора.
+		</p>
+        <p>
+			<h4 class=dtH4>Основные возможности</h4>
+			<dl>
+				<dt style="color: #994d25;"><i>Модальность</i></dt>
+				<dd><li>При появлении окно затемняет фон и блокирует ввод для всех остальных элементов сцены. Пользователь не может игнорировать сообщение.</li></dd>
+				<dd><li>Закрывается только по нажатию кнопки подтверждения, клавиши <b>Enter</b> или <b>Esc</b> (в зависимости от настроек).</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Стандартная структура</i></dt>
+				<dd><li>Содержит область для текста сообщения или произвольного узла, куда можно вставить сложную верстку (картинки, ссылки, форматированный текст).</li></dd>
+				<dd><li>Автоматически имеет кнопку подтверждения (по умолчанию подписана <b>ОК</b> или <b>Принять</b>).</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>Гибкость содержимого</i></dt>
+				<dd><li>Можно заменить стандартный текст на любой узел Контрол (например, сцену с подробным описанием ошибки или инструкцией).</li></dd>
+				<dd><li>Поддерживает настройку заголовка окна.</li></dd>
+			</dl>
+			<dl>
+				<dt style="color: #994d25;"><i>События реакции</i></dt>
+				<dd><li>Генерирует событие <b>Подтверждено (Confirmed)</b>, когда пользователь нажал кнопку <b>ОК</b>. Это сигнал для продолжения выполнения кода (например, "Игрок понял предупреждение, можно запускать уровень").</li></dd>
+			</dl>
+		</p>
+        <h4 class=dtH4>Иерархия</h4>
+        <p>
+            <a href="OSGForms.GObject.html">ОбъектГодо (GObject)</a>
+            <br>&nbsp;&nbsp;&nbsp;<a href="OSGForms.Node.html">Узел (Node)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Viewport.html">Вьюпорт (Viewport)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.Window.html">Окно (Window)</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Уведомление (AcceptDialog)</b>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OSGForms.ConfirmationDialog.html">ОкноСообщений (ConfirmationDialog)</a>
+        </p>
+        <h4 class=dtH4>Смотрите также</h4>
+        <p><a href="OSGForms.html">Библиотека&nbsp;OSGForms</a></p>
+    </div>
+</body>
+</html>
