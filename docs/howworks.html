@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Какэтоработает</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styleos.css">
+	<script defer src="mobil.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <div id="logo"><big><big><big>Игровые формы Godot <br><small><small>для сценарного языка</small></small> OneScript</big></big></big></div>
+            </div>
+            <div style="direction: rtl; overflow:hidden; padding: 8px 0px 0px 0px; margin-top:-7px;">
+				<div id=div22>
+					<input type="checkbox" id="toggle">
+					<label id="label1" class="hamburger-icon" onclick="label1click()"><div></div><div></div><div></div></label>
+				</div>
+                <nav>
+                    <a onclick="navclick(event)" href="index.html">Главная</a>
+                    <a onclick="navclick(event)" href="screenshot.html">Скриншоты</a>
+                    <a onclick="navclick(event)" href="howworks.html">Как это работает</a>
+                    <a onclick="navclick(event)" href="doc.html">Документация</a>
+                    <a onclick="navclick(event)" href="down.html">Скачать</a>
+                    <a onclick="navclick(event)" href="kont.html">Контакты</a>
+					<input type="checkbox" id="toggle2">
+                    <a id="mobil" onclick="mobilClick()">`</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section class="content">
+	<h4 class=dtH3>Заголовок</h4>
+		<p>
+			Представьте двухуровневую систему идентификации.
+			<br>- OneScript => C# обёртка (osgf) через AutoContext
+			<br>- C# обёртка => Godot через JSON-RPC по stdin/stdout
+			<br>stdin/stdout - это "забор" между двумя собеседниками. Один собеседник, это сценарий OneScript. Другой, это запущенный из скомпилированного 
+			exe движок Godot. У Godot есть объекты, большинство из которых создается программно движком Godot после запуска. И в сценарии будут 
+			создаваться объекты - аналоги объектов Godot. Чтобы установить однозначную связь между ними я создаю в своей библиотеке двунаправленные 
+			словари соответствия между ключом в сценарии OneScript и реальным объектом в движке Godot
+			<br>public static Dictionary&lt;string, dynamic&gt; dictKeyEl = new Dictionary&lt;string, dynamic&gt;();
+			<br>public static Dictionary&lt;dynamic, string&gt; dictElKey = new Dictionary&lt;dynamic, string&gt;();
+			<br>и храню там связь ключа, сгенерированного при создании объекта с самим объектом. Такие же словари есть за "забором" на стороне Godot. 
+			Собеседники перекидывают через "забор" только ключи (это свойство КлючЭлемента (ItemKey)).
+		</p>
+		<p>
+			Используйте следующий код:
+			<pre class=code>
+Код Код Код Код
+    // ........
+Код Код Код</pre>
+		</p>
+		<p>
+			Объяснить расположение OneScriptGameForms.dll и OsGForms.exe
+			<br>ПодключитьВнешнююКомпоненту(ОбъединитьПути(ТекущийСценарий().Каталог, "OneScriptGameForms.dll"));
+			<br>ИФ = Новый ИгровыеФормы();
+			<br>ИФ.Запустить(ОбъединитьПути(ИФ.КаталогБиблиотеки, "OsGForms.exe"));
+		</p>
+		<p>
+			Текст Текст Текст Текст Текст Текст <b>Текст</b> Текст Текст Текст
+			<br><br>Текст Текст Текст Текст: 
+			<li>
+				Текст Текст Текст Текст
+			</li>
+			<li>
+				Текст Текст Текст Текст
+			</li>
+			<li>
+				Текст Текст Текст Текст
+			</li>
+		</p>
+	<h4 class=dtH3>Заголовок</h4>
+		<p>
+			Текст Текст Текст Текст
+		</p>
+    </section>
+</body>
+</html>
