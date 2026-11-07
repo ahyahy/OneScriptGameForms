@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>osgf</RootNamespace>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Version>0.1.0.0</Version>
+    <Copyright>Copyright © ahyahy 2026</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="OneScript.Core">
+      <HintPath>OneScript.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OneScript.Language">
+      <HintPath>OneScript.Language.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OneScript.StandardLibrary">
+      <HintPath>OneScript.StandardLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ScriptEngine">
+      <HintPath>ScriptEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ScriptEngine.HostedScript">
+      <HintPath>ScriptEngine.HostedScript.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
